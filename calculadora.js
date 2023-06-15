@@ -1,7 +1,7 @@
 function calcularIMC(){
-    let peso = Number(document.querySelector("#peso").value)
+    let peso = document.querySelector("#peso").value
     
-    let altura = Number(document.querySelector("#altura").value)
+    let altura = document.querySelector("#altura").value
     altura= altura/100
 
     let imc = peso / altura** 2;
@@ -9,8 +9,6 @@ function calcularIMC(){
     console.log(imc)
     return imc  
 }
-
-
 
 function exibirIMC(){
     
@@ -28,6 +26,5 @@ function exibirIMC(){
         text="Você está na faixa de IMC classificada  como obesidade mórbida"
       }
 
-
-    document.getElementById("resultado_imc").innerHTML = text
+    document.querySelector("#resultado_imc").innerHTML = text
 }
