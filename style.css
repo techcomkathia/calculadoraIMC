@@ -10,6 +10,7 @@ body{
     align-items: center;
     width: 100vw;
     height: 100vh;
+    background-image: radial-gradient(circle at 55.29% 50%, #f4cda0 0, #f2c499 12.5%, #edb78d 25%, #e4a67e 37.5%, #d8906c 50%, #cb7a5c 62.5%, #c26851 75%, #bb5b4c 87.5%, #b8514c 100%);
 }
 
 .calc{
@@ -59,7 +60,7 @@ button{
     height: 3em;
     width: 100%;
     font-size: 1.5rem;
-    background-color: #FF9500;
+    background-color:#cb7a5c;
     border: none;
     border-radius: 10px;
     color: white;
