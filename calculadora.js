@@ -1,21 +1,25 @@
 function calcularIMC(){
-    let peso = document.querySelector("#peso")
-    peso/=100
-
-    let altura = document.querySelector("#altura")
+    let peso = Number(document.querySelector("#peso").value)
+    
+    let altura = Number(document.querySelector("#altura").value)
+    altura= altura/100
 
     let imc = peso / altura** 2;
 
-    return imc
+    console.log(imc)
+    return imc  
 }
 
+
+
 function exibirIMC(){
+    
     let imc = calcularIMC()
 
     if (imc < 18.5) {
         text="Você está abaixo da faixa de IMC esperado"
       } else if (imc < 24.9) {
-        text="Você está abaixo da faixa de IMC esperado"
+        text="Você está na faixa de IMC esperado"
       } else if (imc < 29.9) {
         text="Você está na faixa de IMC classificada  como sobrepeso"
       } else if (imc < 39.9) {
@@ -23,5 +27,7 @@ function exibirIMC(){
       } else if (imc > 39.9) {
         text="Você está na faixa de IMC classificada  como obesidade mórbida"
       }
-      document.getElementById("resultado_imc").innerText=text
+
+
+    document.getElementById("resultado_imc").innerHTML = text
 }
