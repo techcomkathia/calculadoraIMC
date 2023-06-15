@@ -4,6 +4,14 @@
     box-sizing: border-box;
 }
 
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
 .calc{
     display: flex;
     justify-content: center;
@@ -12,20 +20,22 @@
 .container{
     background-color: #1C1C1C;
     display: flex;
-    padding: 1.5em;
-    border-radius: 0.5em;
+    padding: 3em;
+    border-radius: 15px;
     flex-direction: column;
     align-items: center;
-    width: 20em;
+    width: 25em;
 }
 
 h1{
-    margin-block-start: 0em; 
-    color: white;
+   color: white;
+   margin: 1rem 0rem;
 }
 
-h2{
+label{
     color: #D4D4D2;
+    padding: 1rem 0rem ;
+    font-size: 1.5rem;
 }
 
 .entrada_calc{
@@ -34,19 +44,24 @@ h2{
     align-items: center;
     justify-content: space-between;
 }
+
 input{
-    height: 1.5em;
+    height: 2em;
 }
+
 textarea{
     width: 100%;
     margin-top: 2em;
+    border-radius: 10px;
 }
 
 button{
     height: 3em;
     width: 100%;
+    font-size: 1.5rem;
     background-color: #FF9500;
     border: none;
+    border-radius: 10px;
     color: white;
 }
 button:hover{
