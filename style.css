@@ -50,7 +50,8 @@ label{
 }
 
 input{
-    height: 2em;
+    width: 12rem;
+    font-size: 1rem;
 }
 
 textarea{
@@ -73,4 +74,17 @@ button{
 }
 button:hover{
     cursor: pointer;
+}
+
+#resultado_imc{
+    margin: 2em;
+    width: 19em;
+    height: 4em;
+    border-radius:10px ;
+    background-color: #D4D4D2;
+}
+
+#resultado_imc p{
+    margin: 0.5rem;
+    text-align: center;
 }

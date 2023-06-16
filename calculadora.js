@@ -26,5 +26,5 @@ function exibirIMC(){
         text="Você está na faixa de IMC classificada  como obesidade mórbida"
       }
 
-    document.querySelector("#resultado_imc").innerHTML = text
+    document.querySelector("#resultado_imc").innerHTML = `<p> ${text} <\p>` 
 }
